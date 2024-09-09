@@ -7,21 +7,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{8B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShopLand.Catalog", "ShopLand.Catalog", "{7F551E9B-6AAE-44D4-B0CF-51DC694FBF1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src", "Services\ShopLand.Catalog\src\src.csproj", "{D38ECC70-7248-4589-A7C0-63A52C4A8CD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "src", "Services\ShopLand.Catalog\src\src.csproj", "{D38ECC70-7248-4589-A7C0-63A52C4A8CD7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{78C34B7C-608C-4FA1-8431-2E992889C7DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D38ECC70-7248-4589-A7C0-63A52C4A8CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D38ECC70-7248-4589-A7C0-63A52C4A8CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D38ECC70-7248-4589-A7C0-63A52C4A8CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D38ECC70-7248-4589-A7C0-63A52C4A8CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C34B7C-608C-4FA1-8431-2E992889C7DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C34B7C-608C-4FA1-8431-2E992889C7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C34B7C-608C-4FA1-8431-2E992889C7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C34B7C-608C-4FA1-8431-2E992889C7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7F551E9B-6AAE-44D4-B0CF-51DC694FBF1C} = {8B67DF85-8A1B-4289-B011-CC1CFDEF1F06}
