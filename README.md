@@ -1,4 +1,4 @@
-# ShopLand.MicroServices
+# BazarChe
 
 ## Project Overview:
 
