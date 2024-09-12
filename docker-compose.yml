@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  src:
-    image: ${DOCKER_REGISTRY-}src
-    build:
-      context: .
-      dockerfile: Services/ShopLand.Catalog/src/Dockerfile

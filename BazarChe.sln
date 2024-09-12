@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E62116DA-9F4F-42D3-8B52-3D2024D6661D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BazarChe.Catalog", "BazarChe.Catalog", "{3E55D714-1E68-43ED-9E27-65E58F0F168C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src", "Services\BazarChe.Catalog\src\src.csproj", "{B96BD9CC-CE2F-4733-B98C-5CF201E2E635}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B96BD9CC-CE2F-4733-B98C-5CF201E2E635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96BD9CC-CE2F-4733-B98C-5CF201E2E635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96BD9CC-CE2F-4733-B98C-5CF201E2E635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B96BD9CC-CE2F-4733-B98C-5CF201E2E635}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E55D714-1E68-43ED-9E27-65E58F0F168C} = {E62116DA-9F4F-42D3-8B52-3D2024D6661D}
+		{B96BD9CC-CE2F-4733-B98C-5CF201E2E635} = {3E55D714-1E68-43ED-9E27-65E58F0F168C}
+	EndGlobalSection
+EndGlobal
