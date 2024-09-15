@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BazarChe.Catalog", "BazarCh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src", "Services\BazarChe.Catalog\src\src.csproj", "{B96BD9CC-CE2F-4733-B98C-5CF201E2E635}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Api", "Services\BazarChe.Catalog\Catalog.Api\Catalog.Api.csproj", "{8DC933CF-941F-4DD4-9E21-744101652419}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,9 +24,14 @@ Global
 		{B96BD9CC-CE2F-4733-B98C-5CF201E2E635}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B96BD9CC-CE2F-4733-B98C-5CF201E2E635}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B96BD9CC-CE2F-4733-B98C-5CF201E2E635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC933CF-941F-4DD4-9E21-744101652419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC933CF-941F-4DD4-9E21-744101652419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC933CF-941F-4DD4-9E21-744101652419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC933CF-941F-4DD4-9E21-744101652419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3E55D714-1E68-43ED-9E27-65E58F0F168C} = {E62116DA-9F4F-42D3-8B52-3D2024D6661D}
 		{B96BD9CC-CE2F-4733-B98C-5CF201E2E635} = {3E55D714-1E68-43ED-9E27-65E58F0F168C}
+		{8DC933CF-941F-4DD4-9E21-744101652419} = {3E55D714-1E68-43ED-9E27-65E58F0F168C}
 	EndGlobalSection
 EndGlobal
