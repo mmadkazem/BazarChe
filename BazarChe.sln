@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Api", "Services\Baz
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{105D77CC-44F7-4739-B667-47EB4EA3688E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BazarChe.Media", "BazarChe.Media", "{9A8D94C5-CE7E-496F-86E5-B37781E2D9D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Media.Api", "Services\BazarChe.Media\Media.Api\Media.Api.csproj", "{FA285461-297F-4B89-B3E0-B60B1B6E0A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{105D77CC-44F7-4739-B667-47EB4EA3688E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{105D77CC-44F7-4739-B667-47EB4EA3688E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{105D77CC-44F7-4739-B667-47EB4EA3688E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA285461-297F-4B89-B3E0-B60B1B6E0A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA285461-297F-4B89-B3E0-B60B1B6E0A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA285461-297F-4B89-B3E0-B60B1B6E0A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA285461-297F-4B89-B3E0-B60B1B6E0A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3E55D714-1E68-43ED-9E27-65E58F0F168C} = {E62116DA-9F4F-42D3-8B52-3D2024D6661D}
 		{8DC933CF-941F-4DD4-9E21-744101652419} = {3E55D714-1E68-43ED-9E27-65E58F0F168C}
+		{9A8D94C5-CE7E-496F-86E5-B37781E2D9D2} = {E62116DA-9F4F-42D3-8B52-3D2024D6661D}
+		{FA285461-297F-4B89-B3E0-B60B1B6E0A5A} = {9A8D94C5-CE7E-496F-86E5-B37781E2D9D2}
 	EndGlobalSection
 EndGlobal

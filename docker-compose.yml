@@ -13,6 +13,12 @@ services:
       context: .
       dockerfile: Services/BazarChe.Catalog/Catalog.Api/Dockerfile
 
+  media.api:
+    image: ${DOCKER_REGISTRY-}mediaapi
+    build:
+      context: .
+      dockerfile: Services/BazarChe.Media/Media.Api/Dockerfile
+
 volumes:
   postgres_data:
   pgadmin_data:

@@ -29,3 +29,9 @@ services:
       - "10001:8080"
     depends_on:
       - catalogdb
+
+  media.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "10002:8080"
