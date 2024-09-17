@@ -1,5 +1,3 @@
-using Catalog.Api.Common.Persistance.UnitOfWorks;
-
 namespace Catalog.Api.Features.CatalogBrand.UseCase.Queries.GetBrandById;
 
 

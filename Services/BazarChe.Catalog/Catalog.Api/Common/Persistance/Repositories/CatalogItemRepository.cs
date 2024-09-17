@@ -29,7 +29,6 @@ public sealed class CatalogItemRepository(CatalogDbContext context) : ICatalogIt
     public async Task<CatalogItemQueryResponse?> Get(Expression<Func<Item, bool>> expression, CancellationToken token = default)
         => await _context.Items.AsQueryable()
                                 .Where(expression)
-                                .AsNoTracking()
                                 .Select(i => new CatalogItemQueryResponse
                                 (
                                     i.Name,
@@ -47,7 +46,6 @@ public sealed class CatalogItemRepository(CatalogDbContext context) : ICatalogIt
 
     public async Task<IEnumerable<CatalogItemQueryResponse>> GetAll(int page, int sizePage, CancellationToken token = default)
         => await _context.Items.AsQueryable()
-                                .AsNoTracking()
                                 .OrderBy(c => c.Name)
                                 .Select(x => new CatalogItemQueryResponse
                                 (

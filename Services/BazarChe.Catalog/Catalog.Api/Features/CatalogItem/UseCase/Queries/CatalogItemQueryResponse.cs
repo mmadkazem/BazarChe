@@ -1,7 +1,7 @@
 namespace Catalog.Api.Features.CatalogItem.UseCase.Queries;
 
 
-public readonly record struct CatalogItemQueryResponse
+public sealed record CatalogItemQueryResponse
 (
     string Name,
     string Slug,

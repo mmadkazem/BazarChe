@@ -14,17 +14,25 @@ public sealed class BrandRepository(CatalogDbContext context) : IBrandRepository
 
     public async Task<Brand?> FirstOrDefaultAsync(Expression<Func<Brand, bool>> expression, CancellationToken token)
         => await _context.Brands.AsQueryable()
-                            .FirstOrDefaultAsync(expression, token);
+                                .FirstOrDefaultAsync(expression, token);
 
-    public Task<GetBrandQueryResponse> Get(Expression<Func<Brand, bool>> expression, CancellationToken token = default)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<IEnumerable<GetBrandQueryResponse>> GetAll(CancellationToken token = default)
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<GetBrandQueryResponse?> Get(Expression<Func<Brand, bool>> expression, CancellationToken token = default)
+        => await _context.Brands.AsQueryable()
+                                .Where(expression)
+                                .Select(b => new GetBrandQueryResponse
+                                (
+                                    b.Id,
+                                    b.Name
+                                ))
+                                .FirstOrDefaultAsync(token);
+    public async Task<IEnumerable<GetBrandQueryResponse>> GetAll(CancellationToken token = default)
+        => await _context.Brands.AsQueryable()
+                                    .Select(b => new GetBrandQueryResponse
+                                    (
+                                        b.Id,
+                                        b.Name
+                                    ))
+                                    .ToListAsync(token);
 
     public void Remove(Brand brand)
         => _context.Brands.Remove(brand);

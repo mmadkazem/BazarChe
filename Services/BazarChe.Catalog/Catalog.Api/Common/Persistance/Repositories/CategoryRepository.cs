@@ -28,13 +28,11 @@ public sealed class CategoryRepository(CatalogDbContext context) : ICategoryRepo
         => await _context.Categories.AsQueryable()
                                     .Where(expression)
                                     .Select(c => new GetCategoryByIdQueryResponse(c.Id, c.Name, c.Path))
-                                    .AsNoTracking()
                                     .FirstOrDefaultAsync(token);
 
     public async Task<IEnumerable<GetCategoriesQueryResponse>> GetAll(CancellationToken token = default)
         => await _context.Categories.AsQueryable()
                                     .OrderBy(c => c.Id)
                                     .Select(x => new GetCategoriesQueryResponse(x.Id, x.Name, x.Path))
-                                    .AsNoTracking()
                                     .ToListAsync(token);
 }

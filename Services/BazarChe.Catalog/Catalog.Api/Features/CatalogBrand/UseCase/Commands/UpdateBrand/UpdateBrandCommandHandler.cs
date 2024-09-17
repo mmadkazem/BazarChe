@@ -1,5 +1,3 @@
-using Catalog.Api.Common.Persistance.UnitOfWorks;
-
 namespace Catalog.Api.Features.CatalogBrand.UseCase.Commands.UpdateBrand;
 
 public sealed class UpdateBrandCommandHandler(IUnitOfWork uow) : IRequestHandler<UpdateBrandCommandRequest, Results<Created, NotFound<string>>>

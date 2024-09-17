@@ -1,10 +1,3 @@
-using Catalog.Api.Common.Persistance.Context;
-using Catalog.Api.Common.Persistance.Repositories;
-using Catalog.Api.Common.Persistance.UnitOfWorks;
-using Catalog.Api.Features.CatalogBrand.Common;
-using Catalog.Api.Features.CatalogCategory.Common;
-using Catalog.Api.Features.CatalogItem.Common;
-
 namespace Catalog.Api.Common.Extensions;
 
 

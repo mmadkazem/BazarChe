@@ -1,5 +1,3 @@
-using Catalog.Api.Common.Persistance.UnitOfWorks;
-
 namespace Catalog.Api.Features.CatalogBrand.UseCase.Commands.RemoveBrand;
 
 public sealed class RemoveBrandCommandHandler(IUnitOfWork uow) : IRequestHandler<RemoveBrandCommandRequest, Results<NoContent, NotFound<string>>>

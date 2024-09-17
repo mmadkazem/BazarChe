@@ -9,7 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-
+*.excalidraw
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

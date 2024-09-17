@@ -6,7 +6,7 @@ public sealed class EndPoint : ICarterModule
     {
         app.MapGroup(FeatureManger.Prefix)
             .WithTags(FeatureManger.EndPointTagName)
-            .MapDelete("", async (ISender _sender, CancellationToken token) =>
+            .MapGet("", async (ISender _sender, CancellationToken token) =>
             {
                 return await _sender.Send(new GetBrandsQueryRequest(), token);
             });

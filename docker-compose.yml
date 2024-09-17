@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  catalogdb:
+    image: postgres
+
+  pgadmin:
+    image: dpage/pgadmin4
+
+  catalog.api:
+    image: ${DOCKER_REGISTRY-}catalogapi
+    build:
+      context: .
+      dockerfile: Services/BazarChe.Catalog/Catalog.Api/Dockerfile
+
+volumes:
+  postgres_data:
+  pgadmin_data:

@@ -1,5 +1,3 @@
-using Catalog.Api.Common.Persistance.UnitOfWorks;
-
 namespace Catalog.Api.Features.CatalogBrand.UseCase.Commands.CreateBrand;
 
 public sealed class CreateBrandCommandHandler(IUnitOfWork uow) : IRequestHandler<CreateBrandCommandRequest, Results<Created, BadRequest<string>>>
