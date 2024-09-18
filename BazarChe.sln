@@ -45,6 +45,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BazarChe.Inventory", "Bazar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Api", "Services\BazarChe.Inventory\Inventory.Api\Inventory.Api.csproj", "{246EF1DA-50EE-4CC1-9426-ABED709529B6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BazarChe.Notifire", "BazarChe.Notifire", "{0C300715-BAFD-421C-A4B0-D921FC959EC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifire.Api", "Services\BazarChe.Notifire\Notifire.Api\Notifire.Api.csproj", "{556BC8CA-8C7F-4D9F-8259-8E68F8C2B2A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +99,10 @@ Global
 		{246EF1DA-50EE-4CC1-9426-ABED709529B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{246EF1DA-50EE-4CC1-9426-ABED709529B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{246EF1DA-50EE-4CC1-9426-ABED709529B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{556BC8CA-8C7F-4D9F-8259-8E68F8C2B2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{556BC8CA-8C7F-4D9F-8259-8E68F8C2B2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{556BC8CA-8C7F-4D9F-8259-8E68F8C2B2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{556BC8CA-8C7F-4D9F-8259-8E68F8C2B2A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,5 +127,7 @@ Global
 		{8B82AB58-6CBE-4745-A7EC-964CB9001E56} = {89F981C6-20B3-4AEA-8568-E4243B8AD89E}
 		{B6ECA987-944C-452A-9610-CBA422960FF7} = {E62116DA-9F4F-42D3-8B52-3D2024D6661D}
 		{246EF1DA-50EE-4CC1-9426-ABED709529B6} = {B6ECA987-944C-452A-9610-CBA422960FF7}
+		{0C300715-BAFD-421C-A4B0-D921FC959EC5} = {E62116DA-9F4F-42D3-8B52-3D2024D6661D}
+		{556BC8CA-8C7F-4D9F-8259-8E68F8C2B2A8} = {0C300715-BAFD-421C-A4B0-D921FC959EC5}
 	EndGlobalSection
 EndGlobal
