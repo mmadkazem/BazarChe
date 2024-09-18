@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount.Api", "Services\Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount.Grpc", "Services\BazarChe.Discount\Discount.Grpc\Discount.Grpc.csproj", "{CC14239A-5BB6-4802-A7B1-006E3B0AB0C9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BazarChe.Feedback", "BazarChe.Feedback", "{89F981C6-20B3-4AEA-8568-E4243B8AD89E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feedback.Api", "Services\BazarChe.Feedback\Feedback.Api\Feedback.Api.csproj", "{8B82AB58-6CBE-4745-A7EC-964CB9001E56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{CC14239A-5BB6-4802-A7B1-006E3B0AB0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC14239A-5BB6-4802-A7B1-006E3B0AB0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC14239A-5BB6-4802-A7B1-006E3B0AB0C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B82AB58-6CBE-4745-A7EC-964CB9001E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B82AB58-6CBE-4745-A7EC-964CB9001E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B82AB58-6CBE-4745-A7EC-964CB9001E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B82AB58-6CBE-4745-A7EC-964CB9001E56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,5 +107,7 @@ Global
 		{CEDEFF9B-8C2E-4398-88FE-EBAD7855A30F} = {E62116DA-9F4F-42D3-8B52-3D2024D6661D}
 		{A03C9116-2F21-48E1-9BD4-37EA7C567E4E} = {CEDEFF9B-8C2E-4398-88FE-EBAD7855A30F}
 		{CC14239A-5BB6-4802-A7B1-006E3B0AB0C9} = {CEDEFF9B-8C2E-4398-88FE-EBAD7855A30F}
+		{89F981C6-20B3-4AEA-8568-E4243B8AD89E} = {E62116DA-9F4F-42D3-8B52-3D2024D6661D}
+		{8B82AB58-6CBE-4745-A7EC-964CB9001E56} = {89F981C6-20B3-4AEA-8568-E4243B8AD89E}
 	EndGlobalSection
 EndGlobal
