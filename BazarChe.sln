@@ -73,6 +73,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profile.Domain", "Services\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profile.Infrastructure", "Services\BazarChe.Profile\Profile.Infrastructure\Profile.Infrastructure.csproj", "{D8C1A105-C0E7-4D21-9DF4-2E665E02C429}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BazarChe.Reaction", "BazarChe.Reaction", "{065939AF-155E-4C9C-B0B3-472E75F39C0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reaction.Api", "Services\BazarChe.Reaction\Reaction.Api\Reaction.Api.csproj", "{1EF6CAE9-A577-4505-8AF2-0F2BB666F230}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +167,10 @@ Global
 		{D8C1A105-C0E7-4D21-9DF4-2E665E02C429}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8C1A105-C0E7-4D21-9DF4-2E665E02C429}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8C1A105-C0E7-4D21-9DF4-2E665E02C429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF6CAE9-A577-4505-8AF2-0F2BB666F230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF6CAE9-A577-4505-8AF2-0F2BB666F230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF6CAE9-A577-4505-8AF2-0F2BB666F230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF6CAE9-A577-4505-8AF2-0F2BB666F230}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -201,5 +209,7 @@ Global
 		{425CEB65-1616-4E54-AFC8-521CAC979202} = {A3887C7E-553C-4E65-A280-761D68FD6D0A}
 		{E5F7A2BD-FDEC-4521-AF0B-EAED0D230E61} = {A3887C7E-553C-4E65-A280-761D68FD6D0A}
 		{D8C1A105-C0E7-4D21-9DF4-2E665E02C429} = {A3887C7E-553C-4E65-A280-761D68FD6D0A}
+		{065939AF-155E-4C9C-B0B3-472E75F39C0C} = {E62116DA-9F4F-42D3-8B52-3D2024D6661D}
+		{1EF6CAE9-A577-4505-8AF2-0F2BB666F230} = {065939AF-155E-4C9C-B0B3-472E75F39C0C}
 	EndGlobalSection
 EndGlobal
