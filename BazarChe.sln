@@ -59,6 +59,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Domain", "Services\Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Infrastructure", "Services\BazarChe.Order\Order.Infrastructure\Order.Infrastructure.csproj", "{173EB86E-7FD9-4AB5-BB53-465934CD72C3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BazarChe.Payment", "BazarChe.Payment", "{6D104641-5933-4BCE-8DC8-983187128197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Api", "Services\BazarChe.Payment\Payment.Api\Payment.Api.csproj", "{874DD577-9970-4C02-A042-5D19A624984C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,10 @@ Global
 		{173EB86E-7FD9-4AB5-BB53-465934CD72C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{173EB86E-7FD9-4AB5-BB53-465934CD72C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{173EB86E-7FD9-4AB5-BB53-465934CD72C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874DD577-9970-4C02-A042-5D19A624984C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874DD577-9970-4C02-A042-5D19A624984C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874DD577-9970-4C02-A042-5D19A624984C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874DD577-9970-4C02-A042-5D19A624984C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,5 +168,7 @@ Global
 		{63179082-5BA5-44D4-B3F9-59AF1D88B20F} = {0912619C-0B25-48C0-AC5E-F35FBAC80049}
 		{A3657FD5-9953-469B-8488-CD24AFD459E6} = {0912619C-0B25-48C0-AC5E-F35FBAC80049}
 		{173EB86E-7FD9-4AB5-BB53-465934CD72C3} = {0912619C-0B25-48C0-AC5E-F35FBAC80049}
+		{6D104641-5933-4BCE-8DC8-983187128197} = {E62116DA-9F4F-42D3-8B52-3D2024D6661D}
+		{874DD577-9970-4C02-A042-5D19A624984C} = {6D104641-5933-4BCE-8DC8-983187128197}
 	EndGlobalSection
 EndGlobal
