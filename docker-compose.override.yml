@@ -41,6 +41,9 @@ services:
     ports:
         - "5672:5672"
         - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest   # تنظیمات کاربر پیش‌فرض
+      RABBITMQ_DEFAULT_PASS: guest 
 
   catalog.api:
     environment:

@@ -89,6 +89,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BazarChe.Wallet", "BazarChe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wallet.Api", "Services\BazarChe.Wallet\Wallet.Api\Wallet.Api.csproj", "{2BA1636F-A3E6-4786-9F20-9544304D49B0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{03766127-D7C5-4042-9A6D-CC72DD2A8862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Message", "BuildingBlocks\EventBus.Message\EventBus.Message.csproj", "{1916CD00-3BD1-4DBE-9BFB-4BDFEED62845}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +199,10 @@ Global
 		{2BA1636F-A3E6-4786-9F20-9544304D49B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BA1636F-A3E6-4786-9F20-9544304D49B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BA1636F-A3E6-4786-9F20-9544304D49B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1916CD00-3BD1-4DBE-9BFB-4BDFEED62845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1916CD00-3BD1-4DBE-9BFB-4BDFEED62845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1916CD00-3BD1-4DBE-9BFB-4BDFEED62845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1916CD00-3BD1-4DBE-9BFB-4BDFEED62845}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -241,5 +249,6 @@ Global
 		{14265659-A5A9-41BE-B8DD-8D07441FD148} = {CD5233E5-9FF3-462D-AA5D-6DC8E52793DC}
 		{D827B875-3A39-488A-882C-1A6E34C4F2C3} = {E62116DA-9F4F-42D3-8B52-3D2024D6661D}
 		{2BA1636F-A3E6-4786-9F20-9544304D49B0} = {D827B875-3A39-488A-882C-1A6E34C4F2C3}
+		{1916CD00-3BD1-4DBE-9BFB-4BDFEED62845} = {03766127-D7C5-4042-9A6D-CC72DD2A8862}
 	EndGlobalSection
 EndGlobal

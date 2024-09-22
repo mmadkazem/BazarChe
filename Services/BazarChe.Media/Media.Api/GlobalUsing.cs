@@ -1,0 +1,9 @@
+global using Microsoft.EntityFrameworkCore;
+global using EventBus.Message.MediaEvents;
+global using Microsoft.AspNetCore.Mvc;
+global using Media.Api.Persistance;
+global using Media.Api.Extensions;
+global using Minio.DataModel.Args;
+global using Media.Api.Endpoints;
+global using MassTransit;
+global using Minio;

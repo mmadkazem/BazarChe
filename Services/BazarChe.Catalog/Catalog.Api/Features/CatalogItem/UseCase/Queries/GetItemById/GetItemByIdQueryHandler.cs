@@ -11,6 +11,6 @@ public sealed class GetItemByIdQueryHandler(IUnitOfWork uow) : IRequestHandler<G
         {
             return TypedResults.NotFound();
         }
-        return TypedResults.Ok(response);
+        return TypedResults.Ok(response)!;
     }
 }
