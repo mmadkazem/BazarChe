@@ -21,6 +21,26 @@ services:
     restart: always
     ports:
       - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin/data/
+
+  minio:
+    environment:
+      - MINIO_ROOT_USER=admin
+      - MINIO_ROOT_PASSWORD=admin123
+    restart: always
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+
+  rabbitmq:
+    container_name: rabbitmq
+    restart: always
+    ports:
+        - "5672:5672"
+        - "15672:15672"
 
   catalog.api:
     environment:

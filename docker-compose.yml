@@ -3,22 +3,47 @@ version: '3.4'
 services:
   catalogdb:
     image: postgres
+    networks:
+      - bazarche_network
 
   pgadmin:
     image: dpage/pgadmin4
 
+  rabbitmq:
+    image: rabbitmq
+    networks:
+      - bazarche_network
+
+  minio:
+    image: minio/minio
+    container_name: minio
+    command: server /data --console-address ":9001"
+    networks:
+      - bazarche_network
+
   catalog.api:
+    container_name: catalogapi
     image: ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
       dockerfile: Services/BazarChe.Catalog/Catalog.Api/Dockerfile
+    networks:
+      - bazarche_network
 
   media.api:
+    container_name: mediaapi
     image: ${DOCKER_REGISTRY-}mediaapi
     build:
       context: .
       dockerfile: Services/BazarChe.Media/Media.Api/Dockerfile
+    networks:
+      - bazarche_network
+
+networks:
+  bazarche_network:
+    driver: bridge
 
 volumes:
   postgres_data:
   pgadmin_data:
+  minio_data:
