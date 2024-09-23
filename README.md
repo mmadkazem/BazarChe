@@ -88,7 +88,7 @@ Our ecommerce system is designed for wholesale sales of various products. The sy
 git clone https://github.com/mmadkazem/BazarChe.git
 ```
 
-2. Build Docker Compose file:
+2. Build and Run Docker Compose file:
 
 ```bash
 docker-compose -f .\docker-compose.override.yml -f .\docker-compose.yml up --build
