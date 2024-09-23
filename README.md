@@ -62,6 +62,12 @@ Our ecommerce system is designed for wholesale sales of various products. The sy
 * Agents can inform customers about product status updates
 * Multiple notification channels for convenience
 
+#### Affiliate Marketing System
+
+* Businesses can enable affiliate features for their products
+* Other users can assist in promoting and selling products
+* Enhances productivity and supports business growth
+
 ## How it Works
 ---------------
 
