@@ -11,7 +11,7 @@ This is an e-commerce system built on microservice architecture using:
 - MediatR
 - FastEndpoints
 - Carter
-- Yarp
+- Ocelot
 - JWT Tokens
 - MasTransit(Rabbitmq and Kafka)
 - Polly
@@ -22,6 +22,7 @@ This is an e-commerce system built on microservice architecture using:
 - DDD (Domain Driven Design)
 - Vertical Slice Architecture
 - Distributed Cache(Redis)
+- Distributed Transaction (Saga Pattern)
 - MongoDb
 - Postgresql
 
