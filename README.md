@@ -95,3 +95,7 @@ docker-compose -f .\docker-compose.override.yml -f .\docker-compose.yml up --bui
 ```
 ## Give a Star! ⭐
 If you find this project useful or interesting, a star on GitHub would be greatly appreciated. It helps support the project and acknowledges the efforts of its contributors.
+
+## License
+
+This project is licensed under the MIT License: [MIT License](https://opensource.org/licenses/MIT).
