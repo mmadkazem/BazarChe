@@ -78,7 +78,7 @@ Our ecommerce system is designed for wholesale sales of various products. The sy
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/thisisnabi/Locator.git
+git clone https://github.com/mmadkazem/BazarChe.git
 ```
 
 ## Give a Star! ⭐
