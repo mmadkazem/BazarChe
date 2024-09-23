@@ -72,3 +72,14 @@ Our ecommerce system is designed for wholesale sales of various products. The sy
 5. Agents purchase products in bulk using their virtual wallet.
 6. Agents can search and buy other agents' products instantly.
 7. Agents can chat with customers and notify them about product status.
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/thisisnabi/Locator.git
+```
+
+## Give a Star! ⭐
+If you find this project helpful or interesting, please consider giving it a star on GitHub. It helps to support the project and gives recognition to the contributors.
