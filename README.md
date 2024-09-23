@@ -82,4 +82,4 @@ git clone https://github.com/mmadkazem/BazarChe.git
 ```
 
 ## Give a Star! ⭐
-If you find this project helpful or interesting, please consider giving it a star on GitHub. It helps to support the project and gives recognition to the contributors.
+If you find this project useful or interesting, a star on GitHub would be greatly appreciated. It helps support the project and acknowledges the efforts of its contributors.
