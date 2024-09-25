@@ -11,7 +11,7 @@ This is an e-commerce system built on microservice architecture using:
 - MediatR
 - FastEndpoints
 - Carter
-- Yarp
+- Ocelot
 - JWT Tokens
 - MasTransit(Rabbitmq and Kafka)
 - Polly
@@ -22,6 +22,7 @@ This is an e-commerce system built on microservice architecture using:
 - DDD (Domain Driven Design)
 - Vertical Slice Architecture
 - Distributed Cache(Redis)
+- Distributed Transaction (Saga Pattern)
 - MongoDb
 - Postgresql
 
@@ -62,6 +63,12 @@ Our ecommerce system is designed for wholesale sales of various products. The sy
 * Agents can inform customers about product status updates
 * Multiple notification channels for convenience
 
+#### Affiliate Marketing System
+
+* Businesses can enable affiliate features for their products
+* Other users can assist in promoting and selling products
+* Enhances productivity and supports business growth
+
 ## How it Works
 ---------------
 
@@ -72,3 +79,23 @@ Our ecommerce system is designed for wholesale sales of various products. The sy
 5. Agents purchase products in bulk using their virtual wallet.
 6. Agents can search and buy other agents' products instantly.
 7. Agents can chat with customers and notify them about product status.
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/mmadkazem/BazarChe.git
+```
+
+2. Build and Run Docker Compose file:
+
+```bash
+docker-compose -f .\docker-compose.override.yml -f .\docker-compose.yml up --build
+```
+## Give a Star! ⭐
+If you find this project useful or interesting, a star on GitHub would be greatly appreciated. It helps support the project and acknowledges the efforts of its contributors.
+
+## License
+
+This project is licensed under the MIT License: [MIT License](https://opensource.org/licenses/MIT).
