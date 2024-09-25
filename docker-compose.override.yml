@@ -41,9 +41,29 @@ services:
     ports:
         - "5672:5672"
         - "15672:15672"
+
+  mediadb:
+    container_name: mediadb
+    restart: always
     environment:
-      RABBITMQ_DEFAULT_USER: guest   # تنظیمات کاربر پیش‌فرض
-      RABBITMQ_DEFAULT_PASS: guest 
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin1234
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data/db:/data/db
+
+  mongo-express:
+    image: mongo-express:latest
+    container_name: mongo-express
+    restart: always
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: admin1234
+      ME_CONFIG_MONGODB_SERVER: mediadb
+    ports:
+      - 10024:8081
+
 
   catalog.api:
     environment:

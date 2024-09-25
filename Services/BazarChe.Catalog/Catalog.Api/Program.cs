@@ -1,5 +1,3 @@
-using Catalog.Api.Common.Extensions;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceCollection();

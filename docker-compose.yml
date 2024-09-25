@@ -10,7 +10,7 @@ services:
     image: dpage/pgadmin4
 
   rabbitmq:
-    image: rabbitmq
+    image: rabbitmq:3-management-alpine
     networks:
       - bazarche_network
 
@@ -21,12 +21,24 @@ services:
     networks:
       - bazarche_network
 
+  mediadb:
+    image: mongo:latest
+    networks:
+      - bazarche_network
+
+  mongo-express:
+    image: mongo-express:latest
+    networks:
+      - bazarche_network
+
   catalog.api:
     container_name: catalogapi
     image: ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
       dockerfile: Services/BazarChe.Catalog/Catalog.Api/Dockerfile
+    volumes:
+      - ../BuildingBlocks/EventBus.Message/Options:/app/Options
     networks:
       - bazarche_network
 
@@ -36,6 +48,8 @@ services:
     build:
       context: .
       dockerfile: Services/BazarChe.Media/Media.Api/Dockerfile
+    volumes:
+      - ../BuildingBlocks/EventBus.Message/Options:/app/Options
     networks:
       - bazarche_network
 

@@ -1,4 +1,4 @@
-﻿namespace Media.Api.Persistance;
+﻿namespace Media.Api.Common.Persistance;
 
 public class MediaDbContext(DbContextOptions<MediaDbContext> options) : DbContext(options)
 {

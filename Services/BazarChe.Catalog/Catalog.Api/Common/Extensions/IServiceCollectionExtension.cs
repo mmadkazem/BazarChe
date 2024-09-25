@@ -1,3 +1,5 @@
+using Catalog.Api.Common.Infrastructure.Consumers;
+
 namespace Catalog.Api.Common.Extensions;
 
 
@@ -11,6 +13,7 @@ public static class IServiceCollectionExtension
             cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
             cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(CatalogValidationBehavior<,>));
         });
+        builder.Services.BrokerConfigure(builder.Configuration);
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddCarter();
         builder.Services.AddExceptionHandlerMiddlewareServices();
@@ -22,7 +25,7 @@ public static class IServiceCollectionExtension
     {
         services.AddDbContext<CatalogDbContext>(option =>
         {
-            option.UseNpgsql(configuration.GetConnectionString("Default"));
+            option.UseNpgsql(configuration.GetConnectionString("CatalogConStr"));
         });
         services.AddScoped<ICatalogItemRepository, CatalogItemRepository>();
         services.AddScoped<ICategoryRepository, CategoryRepository>();
@@ -61,6 +64,21 @@ public static class IServiceCollectionExtension
             });
         });
 
+        return services;
+    }
+
+    public static IServiceCollection BrokerConfigure(this IServiceCollection services, IConfiguration configuration)
+    {
+        services.AddMassTransit(configure =>
+        {
+            var brokerConfig = BrokerOptionFactory.Create();
+            configure.AddConsumer<MediaUploadedEventConsumer>();
+            configure.UsingRabbitMq((ctx, cfg) =>
+            {
+                cfg.Host(brokerConfig.Host);
+                cfg.ConfigureEndpoints(ctx);
+            });
+        });
         return services;
     }
 

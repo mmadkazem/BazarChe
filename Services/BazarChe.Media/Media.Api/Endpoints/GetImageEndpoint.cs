@@ -5,7 +5,7 @@ public static class GetImageEndpoint
     public static void MapGetImageEndpoint(this WebApplication app)
     {
         app.MapGet("/{token:guid:required}",
-            async (MediaDbContext dbContext, MinioClient minio, Guid Token) =>
+            async (MediaDbContext dbContext, IMinioClient minio, Guid Token) =>
             {
 
                 var foundToken = await dbContext.Tokens.FirstOrDefaultAsync(x => x.Id == Token && x.ExpireOn <= DateTime.UtcNow);

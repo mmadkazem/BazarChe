@@ -1,10 +1,10 @@
-namespace Media.Api.Extensions;
+namespace Media.Api.Common.Extensions;
 
 
 
 public static class IServiceCollectionExtension
 {
-    public static void ConfigureService(this WebApplicationBuilder builder)
+    public static void AddServiceCollection(this WebApplicationBuilder builder)
     {
         builder.Services.AddAntiforgery(options =>
         {
@@ -16,6 +16,7 @@ public static class IServiceCollectionExtension
             configure.UseInMemoryDatabase(Guid.NewGuid().ToString());
         });
 
+        builder.DbContextConfig();
         builder.MinIoConfigure();
         builder.BrokerConfigure();
     }
@@ -23,19 +24,24 @@ public static class IServiceCollectionExtension
     {
         builder.Services.AddMassTransit(configure =>
         {
-            var brokerConfig = builder.Configuration.GetSection(BrokerOption.SectionName).Get<BrokerOption>()
-                ?? throw new ArgumentNullException(nameof(BrokerOption));
-
-            configure.UsingRabbitMq((context, cfg) =>
+            var brokerConfig = BrokerOptionFactory.Create();
+            configure.AddConsumers(Assembly.GetExecutingAssembly());
+            configure.UsingRabbitMq((ctx, cfg) =>
             {
-                cfg.Host(brokerConfig.Host, hostConfigure =>
-                {
-                    hostConfigure.Username(brokerConfig.Username);
-                    hostConfigure.Password(brokerConfig.Password);
-                });
+                cfg.Host(brokerConfig.Host);
 
-                cfg.ConfigureEndpoints(context);
+                cfg.ConfigureEndpoints(ctx);
             });
+        });
+    }
+
+    private static void DbContextConfig(this WebApplicationBuilder builder)
+    {
+        var option = builder.Configuration.GetSection(MongoDbOption.SectionName).Get<MongoDbOption>()!;
+
+        builder.Services.AddDbContext<MediaDbContext>(options =>
+        {
+            options.UseMongoDB(option.Host, option.DatabaseName);
         });
     }
 

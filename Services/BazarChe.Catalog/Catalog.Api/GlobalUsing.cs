@@ -13,9 +13,9 @@ global using System.Text.Json;
 // third-party
 global using FluentValidation.Results;
 global using FluentValidation;
+global using MassTransit;
 global using MediatR;
 global using Carter;
-
 
 
 // solution
@@ -33,6 +33,8 @@ global using Catalog.Api.Common.Exceptions.Handlers;
 global using Catalog.Api.Common.Persistance.Context;
 global using Catalog.Api.Common.Extensions;
 global using Catalog.Api.Common.Exceptions;
+global using EventBus.Message.MediaEvents;
 global using Catalog.Api.Common.Behaviors;
+global using EventBus.Message.Options;
 
 
